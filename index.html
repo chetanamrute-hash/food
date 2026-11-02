@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f0">
+  <meta name="description" content="Discover neighborhood favorites and get delicious food delivered with FoodieGo.">
+  <title>FoodieGo — Good food, good mood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/menu.js"></script>
+  <script type="module" src="js/three.js"></script>
+</head>
+<body>
+  <div class="topline">Fresh food from neighborhood kitchens <span>•</span> Free delivery on orders over ₹499</div>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="FoodieGo home"><span class="brand-mark">f</span>Foodie<span class="brand-go">Go</span></a>
+    <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">☰</button>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="index.html">Home</a><a href="menu.html">Menu</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="nav-actions"><form class="header-search search-form" role="search"><label class="sr-only" for="header-search">Search food</label><span aria-hidden="true">⌕</span><input id="header-search" type="search" name="q" placeholder="Find a favorite..."><button type="submit" aria-label="Search">→</button></form><a class="cart-shortcut" href="cart.html" aria-label="Open cart">Bag <span class="cart-count">0</span></a></div>
+  </div></header>
+  <main>
+    <section class="hero container">
+      <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE JOY, DELIVERED</span><h1>Delicious food,<br><em>delivered to your door.</em></h1><p>Thoughtful meals from the neighborhood kitchens you love, brought right to you.</p>
+        <form class="hero-search search-form" role="search"><label class="sr-only" for="hero-search">Search dishes</label><span aria-hidden="true">⌕</span><input id="hero-search" type="search" name="q" placeholder="Pizza, biryani, something sweet..." autocomplete="off"><button class="button button-primary" type="submit">Explore menu <span>→</span></button></form>
+        <div class="hero-social-proof"><span class="hero-rating">★ 4.9</span><span>Made with care, loved by your neighborhood</span></div>
+      </div>
+      <div class="hero-art" aria-label="A freshly made burger, rotating in 3D"><div class="hero-art-glow"></div><canvas id="burger-canvas" aria-label="Interactive 3D burger illustration"></canvas><div class="canvas-fallback" aria-hidden="true"><span>🍔</span></div><div class="hero-sticker"><strong>100%</strong><span>crave-worthy</span><b>✳</b></div><div class="hero-caption"><span class="caption-icon">✳</span><span><strong>Made fresh, just for you</strong><small>From the kitchen to your door</small></span></div></div>
+    </section>
+    <section class="section container" id="categories"><div class="section-heading"><div><span class="eyebrow">A GOOD PLACE TO START</span><h2>What are you <em>craving?</em></h2></div><a class="text-link" href="menu.html">See everything <span>→</span></a></div><div class="category-grid">
+      <a class="category-card" href="menu.html?category=Pizza"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=320&q=80" alt="Fresh margherita pizza" loading="lazy"><span>Pizza</span></a>
+      <a class="category-card" href="menu.html?category=Burgers"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=320&q=80" alt="Juicy cheeseburger" loading="lazy"><span>Burgers</span></a>
+      <a class="category-card" href="menu.html?category=Biryani"><img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=320&q=80" alt="Fragrant biryani" loading="lazy"><span>Biryani</span></a>
+      <a class="category-card" href="menu.html?category=Chinese"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=320&q=80" alt="Stir-fried noodles" loading="lazy"><span>Chinese</span></a>
+      <a class="category-card" href="menu.html?category=South%20Indian"><img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=320&q=80" alt="Crispy masala dosa" loading="lazy"><span>South Indian</span></a>
+      <a class="category-card" href="menu.html?category=Desserts"><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=320&q=80" alt="Tiramisu dessert" loading="lazy"><span>Desserts</span></a>
+      <a class="category-card" href="menu.html?category=Drinks"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=320&q=80" alt="Refreshing fruit drink" loading="lazy"><span>Drinks</span></a>
+    </div></section>
+    <section class="section soft-section" id="best-sellers"><div class="container"><div class="section-heading"><div><span class="eyebrow">THE ONES YOU KEEP COMING BACK TO</span><h2>Best sellers, <em>best bites.</em></h2></div><a class="text-link" href="menu.html">Explore the menu <span>→</span></a></div><div class="food-grid featured-foods"><p class="loading-message">Finding the good stuff…</p></div></div></section>
+    <section class="section container restaurant-section" id="about"><div class="section-heading"><div><span class="eyebrow">GOOD FOOD, GOOD PEOPLE</span><h2>Neighborhood <em>favorites.</em></h2></div><p class="section-lead">A few local kitchens bringing a little more joy to your table.</p></div><div class="restaurant-grid">
+      <article class="restaurant-card"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza from Little Oven" loading="lazy"><div class="restaurant-card-body"><div class="restaurant-meta"><span>★ 4.9</span><span>25–35 min</span></div><h3>Little Oven</h3><p>Pizza · Italian · Neighborhood favorite</p><a href="menu.html?restaurant=Little%20Oven">Explore dishes →</a></div></article>
+      <article class="restaurant-card"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Burger from Good Things Diner" loading="lazy"><div class="restaurant-card-body"><div class="restaurant-meta"><span>★ 4.8</span><span>20–30 min</span></div><h3>Good Things Diner</h3><p>Burgers · Comfort food · Made with love</p><a href="menu.html?restaurant=Good%20Things%20Diner">Explore dishes →</a></div></article>
+      <article class="restaurant-card"><img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=700&q=80" alt="Biryani from Dum and Done" loading="lazy"><div class="restaurant-card-body"><div class="restaurant-meta"><span>★ 4.9</span><span>30–40 min</span></div><h3>Dum &amp; Done</h3><p>Biryani · Indian · A local gem</p><a href="menu.html?restaurant=Dum%20%26%20Done">Explore dishes →</a></div></article>
+    </div></section>
+    <section class="container promo-banner"><div><span class="eyebrow">YOUR FIRST BITE IS ON US</span><h2>Good things come<br>to hungry people.</h2><p>Take ₹100 off your first order over ₹499. Your next favorite is waiting.</p><a class="button button-light" href="menu.html">Find your favorite <span>→</span></a></div><div class="promo-photo"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=85" alt="Fresh pizza with basil" loading="lazy"><span class="promo-sticker">₹100<br><small>OFF</small></span></div></section>
+    <section class="section container testimonial-section"><div class="testimonial-copy"><span class="eyebrow">KIND WORDS, FULL HEARTS</span><div class="stars">★★★★★</div><blockquote>“FoodieGo makes a random Tuesday feel like a little occasion. Everything arrives fresh, and the local spots are such a lovely find.”</blockquote><div class="reviewer"><span class="reviewer-avatar">A</span><span><strong>Ananya R.</strong><small>Very happy FoodieGo regular</small></span></div></div><div class="testimonial-score"><strong>4.9<span>/5</span></strong><div class="stars">★★★★★</div><p>From thousands of happy meals<br>and even happier people.</p></div></section>
+  </main>
+  <footer class="site-footer" id="contact"><div class="container footer-main"><div><a class="brand brand-light" href="index.html"><span class="brand-mark">f</span>Foodie<span class="brand-go">Go</span></a><p>Good food, from good people.<br>Delivered with a little extra care.</p></div><div class="footer-links"><strong>Explore</strong><a href="menu.html">Full menu</a><a href="cart.html">Your cart</a><a href="admin.html">Demo admin</a></div><div class="footer-links"><strong>Say hello</strong><a href="mailto:hello@foodiego.example">hello@foodiego.example</a><span>Made for your neighborhood ♡</span></div><div class="footer-note"><span class="eyebrow">A NOTE FROM US</span><p>Good meals make good days. Thanks for letting us be part of yours.</p></div></div><div class="container footer-bottom"><span>© 2025 FoodieGo. All the good stuff.</span><span>Designed &amp; Developed by Chetan Amrute</span></div></footer>
+  <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
